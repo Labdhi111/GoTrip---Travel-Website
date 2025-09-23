@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - GoTrip</title>
+
+  <!-- Font Awesome for icons -->
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"
+  />
+
+  <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: #fef8ff;
+      color: #fb00ff;
+    }
+
+    /* Navbar */
+    nav {
+      background-color: #ecbce8;
+      color: rgb(0, 0, 0);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+    }
+
+    nav .logo {
+      font-size: 50px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    
+    nav ul li a {
+      color: rgb(0, 0, 0);
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    /* Container */
+    .container {
+      background: url('images/contact.jpg') center/cover no-repeat;
+      height: 130vh;
+      max-width: 1050px;
+      margin: 40px auto;
+      padding: 20px;
+      display: grid;
+      gap: 50px;
+    }
+
+    /* Form */
+    form {
+      background: rgb(233, 246, 245);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(255, 0, 0, 0.1);
+    }
+
+    form h2 {
+      margin-bottom: 20px;
+      color: #ff2f00;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 30px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border: 1px solid #ff0000;
+      border-radius: 10px;
+      font-size: 15px;
+    }
+
+    textarea { resize: none; height: 100px; }
+
+    button {
+      margin-top: 15px;
+      padding: 12px;
+      width: 100%;
+      background: #1370f1;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    
+    /* Contact Info */
+    .contact-info {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .contact-info h2 {
+      margin-bottom: 15px;
+      color: #ff0099;
+    }
+
+    .contact-info p {
+      margin: 8px 0;
+      font-size: 20px;
+    }
+
+    .social-icons {
+      margin-top: 15px;
+    }
+
+    .social-icons a {
+      margin-right: 12px;
+      font-size: 24px;
+      color: #f46879;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.2);
+    }
+
+    /* Brand Hover Colors */
+    .fa-instagram:hover { color: #e1306c; }
+    .fa-facebook:hover { color: #e1306c; }
+    .fa-linkedin:hover { color: #e1306c; }
+    .fa-twitter:hover { color: #e1306c; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #1e90ff;
+      color: white;
+      margin-top: 30px;
+    }
+
+    
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">GoTrip</div>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contact Section -->
+  <div class="container">
+    <!-- Contact Form -->
+    <form>
+      <h2>Send Us a Message</h2>
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Your name">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Your email">
+
+      <label for="gender">Gender</label>
+      <select id="gender">
+        <option value="">Select Gender</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+
+      <label for="country">Country</label>
+      <select id="country">
+        <option value="">Select Country</option>
+        <option>India</option>
+        <option>USA</option>
+        <option>UK</option>
+        <option>France</option>
+        <option>Other</option>
+      </select>
+
+      <label for="message">Message</label>
+      <textarea id="message" placeholder="Write your message..."></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h2>Contact Information</h2>
+      <p><strong>Email:</strong> travelwebsite@gmail.com</p>
+      <p><strong>Phone:</strong> +91 9876543210</p>
+
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 GoTrip.  All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

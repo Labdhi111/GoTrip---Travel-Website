@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - GoTrip</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background-color: #f4fcdf;
+        }
+ /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #ecbce8;
+            color: rgb(0, 0, 0);
+        }
+
+        .navbar .logo {
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+             text-decoration: underline;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('images/destinations-bg.jpg') center/cover no-repeat;
+            height: 130vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            flex-direction: column;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            text-shadow: 2px 2px 6px rgba(17, 5, 250, 0.7);
+        }
+
+        /* Destinations Section */
+        .destinations-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .destinations-container h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #f604a5;
+        }
+
+        .destinations-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .destination-card {
+            background-color: rgb(252, 228, 228);
+            border-radius: 10px;
+            overflow: hidden;
+            width: 300px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: left;
+        }
+
+        .destination-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .destination-card h3 {
+            padding: 15px 15px 5px;
+            font-size: 25px;
+        }
+
+        .destination-card p {
+            padding: 0 15px 15px;
+            color: #1500ff;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e90ff;
+            color: white;
+        }
+
+        /* Responsive */
+        @media(max-width: 768px){
+            .destinations-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">GoTrip</div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Our Destinations</h1>
+        <p>Explore amazing places around the world</p>
+    </section>
+
+    <!-- Destinations Grid -->
+    <div class="destinations-container">
+        <h2>Featured Destinations</h2>
+        <div class="destinations-grid">
+            <div class="destination-card">
+                <img src="images/paris.jpg" alt="Paris">
+                <h3>Paris, France</h3>
+                <p>City of lights, art, and romantic streets.</p>
+            </div>
+            <div class="destination-card">
+                <img src="images/bali.jpg" alt="Bali">
+                <h3>Bali, Indonesia</h3>
+                <p>Tropical paradise with beaches and cultural temples.</p>
+            </div>
+            <div class="destination-card">
+                <img src="images/nyc.jpg" alt="New York">
+                <h3>New York City, USA</h3>
+                <p>The bustling city that never sleeps.</p>
+            </div>
+            <div class="destination-card">
+                <img src="images/rome.jpg" alt="Rome">
+                <h3>Rome, Italy</h3>
+                <p>Historic landmarks and ancient architecture.</p>
+            </div>
+            <div class="destination-card">
+                <img src="images/sydney.jpg" alt="Sydney">
+                <h3>Sydney, Australia</h3>
+                <p>Famous for its Opera House and stunning beaches.</p>
+            </div>
+            <div class="destination-card">
+                <img src="images/tokyo.jpg" alt="Tokyo">
+                <h3>Tokyo, Japan</h3>
+                <p>Modern city blending technology and tradition.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 GoTrip. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

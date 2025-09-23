@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoTrip</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #ecbce8;
+            color: rgb(0, 0, 0);
+        }
+
+        .navbar .logo {
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+             text-decoration: underline;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+        }
+
+
+        /* Hero Section */
+        .hero {
+            background: url('images/hero.jpg') center/cover no-repeat;
+            height: 130vh;
+            color: rgb(241, 19, 97);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .hero .btn {
+            text-decoration: none;
+            background-color: #46c9b9;
+            padding: 12px 25px;
+            color: rgb(16, 16, 16);
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .hero .btn:hover {
+            background-color: #46c9b9;
+        }
+
+        /* Featured Destinations */
+        .featured {
+            padding: 50px;
+            text-align: center;
+            background-color: #f2e3e3;
+        }
+
+        .featured h2 {
+            margin-bottom: 40px;
+            font-size: 50px;
+            color: #080004;
+        }
+
+        .destinations {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .destination-card {
+            background-color: rgb(221, 225, 173);
+            border-radius: 10px;
+            overflow: hidden;
+            width: 300px;
+            box-shadow: 0 4px 6px rgba(51, 48, 48, 0.1);
+            text-align: left;
+        }
+
+        .destination-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .destination-card h3 {
+            padding: 15px 15px 5px;
+            font-size: 25px;
+        }
+
+        .destination-card p {
+            padding: 0 15px 15px;
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e90ff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">GoTrip</div>
+            <ul class="nav-links">
+               <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Explore the World with Us</h1>
+        <p>Your adventure starts here.</p>
+        <a href="destinations.html" class="btn">Discover Destinations</a>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section class="featured">
+        <h2>Featured Destinations</h2>
+        <div class="destinations">
+            <div class="destination-card">
+                <img src="images/paris.jpg" alt="Paris">
+                <h3>Paris</h3>
+                <p>The city of lights and love, full of culture and cuisine.</p>
+            </div>
+            <div class="destination-card">
+                <img src="images/bali.jpg" alt="Bali">
+                <h3>Bali</h3>
+                <p>Experience the tropical paradise with beaches and temples.</p>
+            </div>
+            <div class="destination-card">
+                <img src="images/nyc.jpg" alt="New York City">
+                <h3>New York City</h3>
+                <p>The city that never sleeps — explore iconic landmarks and nightlife.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 GoTrip. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
